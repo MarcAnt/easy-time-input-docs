@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Easy Time Input
 
-## Getting Started
+Time input component for React.
 
-First, run the development server:
+This component is a wrapper around the [TimeInput](https://github.com/MarcAnt/easy-time-input) component.
+
+## Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install @bymarcant/easy-time-input
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```tsx
+import { TimeInput } from "@bymarcant/easy-time-input";
+import "@bymarcant/easy-time-input/style.css";
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+const App = () => {
+  const [time, setTime] = useState<string | Date>("10:30");
 
-## Learn More
+  return (
+    <div>
+      <label>Select a time:</label>
+      <TimeInput value={time} onChange={(newTime) => setTime(newTime)} />
+    </div>
+  );
+};
+```
 
-To learn more about Next.js, take a look at the following resources:
+For more information, visit:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [GitHub repository](https://github.com/MarcAnt/easy-time-input).
+- [NPM package](https://www.npmjs.com/package/@bymarcant/easy-time-input).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Created by [MarcAnt](https://github.com/MarcAnt).
