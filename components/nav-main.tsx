@@ -22,7 +22,10 @@ type Items = {
   url?: string;
   icon: LucideIcon;
   isActive?: boolean;
-  items?: Items;
+  items?: {
+    title: string;
+    url: string;
+  }[];
 }[];
 
 export function NavMain({ items }: { items: Items }) {
