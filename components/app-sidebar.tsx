@@ -77,6 +77,14 @@ const data = {
           url: "#prop-className",
         },
         {
+          title: "colonClassName",
+          url: "#prop-colonClassName",
+        },
+        {
+          title: "inputsContainerClassName",
+          url: "#prop-inputsContainerClassName",
+        },
+        {
           title: "iconClockClassName",
           url: "#prop-iconClockClassName",
         },
@@ -217,6 +225,10 @@ const data = {
         {
           title: "Tailwind CSS styles",
           url: "#example-styled",
+        },
+        {
+          title: "Custom styles",
+          url: "#example-customStyled",
         },
         {
           title: "Disabled",

@@ -12,6 +12,7 @@ import {
   styled,
   withSeconds,
   format,
+  customStyled,
 } from "@/code-examples";
 
 const examples = {
@@ -28,6 +29,7 @@ const examples = {
   stepTime,
   styled,
   withSeconds,
+  customStyled,
 };
 
 type ExampleKeys = keyof typeof examples;

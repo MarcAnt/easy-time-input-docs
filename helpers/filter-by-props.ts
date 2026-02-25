@@ -154,6 +154,19 @@ const props = [
       "Define the className to change the styles used in the time input. This input support tailwind css classes.",
   },
   {
+    prop: "colonClassName",
+    type: "string",
+    default: "undefined",
+    description: "Define the className to change the styles used in the colon",
+  },
+  {
+    prop: "inputsContainerClassName",
+    type: "string",
+    default: "undefined",
+    description:
+      "Define the className to change the styles used in the inputs container",
+  },
+  {
     prop: "iconClockClassName",
     type: "string",
     default: "undefined",

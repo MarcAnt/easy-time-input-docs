@@ -41,6 +41,8 @@ const props = `
     disabledHours?: boolean;
     disabledMinutes?: boolean;
     disabledSeconds?: boolean;
+    colonClassName?: string;
+    inputsContainerClassName?: string;
     iconClockClassName?: string;
     amPmButtonClassName?: string;
     controlsClassName?: string;

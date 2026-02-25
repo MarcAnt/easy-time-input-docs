@@ -63,5 +63,14 @@ export const filterProps = (hash: string) => {
     props.hasSeconds = true;
   }
 
+  if (cleanHash === "customStyled") {
+    props.className = "text-white rounded-md font-semibold bg-gray-600";
+    props.colonClassName = "text-white";
+    props.inputsContainerClassName = "min-w-auto text-white px-1";
+    props.iconClockClassName = "text-white";
+    props.amPmButtonClassName = "text-white";
+    props.controlsClassName = "text-white";
+  }
+
   return props;
 };

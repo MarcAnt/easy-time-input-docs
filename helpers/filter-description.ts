@@ -6,16 +6,17 @@ const titles = {
   format: "A time format with HH:mm",
   hideControls: "Hide controls",
   hour12: "An am/pm button",
-  maxAndMinTime: "Mintime and Maxtime",
+  maxAndMinTime: "Min time and max time",
   readOnly: "Readonly inputs",
   readOnlyInputs: "Readonly inputs",
   stepTime: "Step time",
   styled: "Tailwind css styles",
   withSeconds: "Time input with seconds",
+  customStyled: "Custom styles with tailwind css",
 };
 
 const descriptions = {
-  basic: "A component controlled time input and strng time",
+  basic: "A component controlled time input and string time",
   currentTime:
     "A component controlled with current time using Date(). Add toUTCString() in Next.js to avoid problems with Server components ",
   disabled: "Disabled all inputs and controls",
@@ -29,6 +30,9 @@ const descriptions = {
   stepTime: "Set step time by hours, minutes and hours",
   styled: "Time input with tailwind css",
   withSeconds: "Adding and control seconds ",
+  customStyled: `Custom styles with tailwind css. Adding custom styles to all the inputs and controls. colonClassName: add styles to the colon sign (:). inputsContainerClassName: add styles to the container of inputs. The container is the div that contains all the inputs
+    
+    `,
 };
 
 type DescriptionKeys = keyof typeof descriptions;

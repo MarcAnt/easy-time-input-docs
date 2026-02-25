@@ -83,6 +83,32 @@ export const styled = `
 
   `;
 
+export const customStyled = `
+    import { TimeInput } from "@bymarcant/easy-time-input";
+  import "@bymarcant/easy-time-input/style.css";
+
+  const App = () => {
+    const [time, setTime] = useState<string|Date>("10:30");
+
+    return (
+      <div>
+        <label>Select a time:</label>
+        <TimeInput
+          value={time}
+          onChange={(newTime) => setTime(newTime)}
+          className="text-white rounded-md font-semibold bg-gray-600"
+          colonClassName="text-white"
+          inputsContainerClassName="min-w-auto text-white px-1"
+          iconClockClassName="text-white"
+          amPmButtonClassName="text-white"
+          controlsClassName="text-white"
+        />
+      </div>
+    );
+  };
+
+  `;
+
 export const disabled = `
 
   import { TimeInput } from "@bymarcant/easy-time-input";
