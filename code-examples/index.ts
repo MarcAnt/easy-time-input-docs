@@ -9,9 +9,9 @@ export const basic = `
     return (
       <div>
         <label>Select a time:</label>
-        <TimeInput 
+        <TimeInput
           value={time}
-          onChange={(newTime) => setTime(newTime)} 
+          onChange={(newTime) => setTime(newTime)}
         />
       </div>
     );
@@ -30,9 +30,9 @@ export const withSeconds = `
     return (
       <div>
         <label>Select a time:</label>
-        <TimeInput 
+        <TimeInput
           value={time}
-          onChange={(newTime) => setTime(newTime)} 
+          onChange={(newTime) => setTime(newTime)}
           hasSeconds
         />
       </div>
@@ -52,9 +52,9 @@ export const currentTime = `
     return (
       <div>
         <label>Select a time:</label>
-        <TimeInput 
+        <TimeInput
           value={time}
-          onChange={(newTime) => setTime(newTime)} 
+          onChange={(newTime) => setTime(newTime)}
         />
       </div>
     );

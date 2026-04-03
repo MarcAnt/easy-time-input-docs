@@ -20,7 +20,7 @@ const PropsWrapper = () => {
     <Table>
       <TableHeader>
         <TableRow>
-          <TableHead className="w-[100px]">Prop</TableHead>
+          <TableHead className="w-25">Prop</TableHead>
           <TableHead>Type</TableHead>
           <TableHead>Default</TableHead>
           <TableHead>Description</TableHead>

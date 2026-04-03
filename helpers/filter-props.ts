@@ -1,9 +1,10 @@
+import { Format } from "@/types";
 import { TimeInputProps } from "@bymarcant/easy-time-input";
 
 export const filterProps = (hash: string) => {
   const cleanHash = hash.replace("#example-", "");
 
-  const props: TimeInputProps = {
+  const props: Omit<TimeInputProps, "format"> & Format = {
     value: "10:30",
   };
 
@@ -36,7 +37,12 @@ export const filterProps = (hash: string) => {
   }
 
   if (cleanHash === "format") {
-    props.format = "HH:mm";
+    props.format = {
+      basic: "hh:mm",
+      complete: "HH:mm:ss",
+      full: "hh:mm:ss",
+      short: "HH:mm",
+    };
   }
 
   if (cleanHash === "hideControls") {

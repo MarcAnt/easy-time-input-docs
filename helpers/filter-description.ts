@@ -21,7 +21,7 @@ const descriptions = {
     "A component controlled with current time using Date(). Add toUTCString() in Next.js to avoid problems with Server components ",
   disabled: "Disabled all inputs and controls",
   disabledInputs: "Disabled all inputs by hour, minutes or seconds",
-  format: `A format time with three options:  "HH:mm" | "HH:mm:ss" | "hh:mm:ss" | "hh:mm"`,
+  format: `A format time with four options:  "HH:mm" | "HH:mm:ss" | "hh:mm:ss" | "hh:mm"`,
   hideControls: "Hide controls (down and up arrows)",
   hour12: "A button to change to am/pm.  ",
   maxAndMinTime: "Set the min time and max time",
@@ -31,7 +31,7 @@ const descriptions = {
   styled: "Time input with tailwind css",
   withSeconds: "Adding and control seconds ",
   customStyled: `Custom styles with tailwind css. Adding custom styles to all the inputs and controls. colonClassName: add styles to the colon sign (:). inputsContainerClassName: add styles to the container of inputs. The container is the div that contains all the inputs
-    
+
     `,
 };
 
