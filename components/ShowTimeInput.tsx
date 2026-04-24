@@ -57,16 +57,23 @@ const ShowTimeInput = (props: Omit<TimeInputProps, "format"> & Format) => {
               </SelectGroup>
             </SelectContent>
           </Select>
-        </>
-      ) : null}
 
-      <TimeInput
-        value={time}
-        onChange={(value) => handleChange(value)}
-        className="text-black border-2 border-black"
-        format={valueFormat}
-        {...rest}
-      />
+          <TimeInput
+            value={time}
+            onChange={(value) => handleChange(value)}
+            className="text-black border-2 border-black"
+            format={valueFormat}
+            {...rest}
+          />
+        </>
+      ) : (
+        <TimeInput
+          value={time}
+          onChange={(value) => handleChange(value)}
+          className="text-black border-2 border-black"
+          {...rest}
+        />
+      )}
     </div>
   );
 };

@@ -41,6 +41,7 @@ const props = `
     disabledHours?: boolean;
     disabledMinutes?: boolean;
     disabledSeconds?: boolean;
+    disableFocusOnIcon?: boolean;
     colonClassName?: string;
     inputsContainerClassName?: string;
     iconClockClassName?: string;
@@ -69,6 +70,7 @@ const props = `
     maxTime?: string | Date;
     minTime?: string | Date;
     hideControls?: boolean;
+    hideIcon?: boolean;
     setZeroOnBlur?: boolean;
     stepHours?: number;
     stepMinutes?: number;

@@ -89,9 +89,8 @@ const props = [
   {
     prop: "disableFocusOnIcon",
     type: "boolean",
-    default: "false",
-    description:
-      "Whether the time input has to display icon. By default is true, but it is false, the input will not focus on click",
+    default: "undefined",
+    description: "Disable the focus on the clock icon when click over it",
   },
   {
     prop: "format",
@@ -106,6 +105,12 @@ const props = [
     default: "false",
     description:
       "Whether the time input has to display controls. By default is false",
+  },
+  {
+    prop: "hideIcon",
+    type: "boolean",
+    default: "undefined",
+    description: "Hide the icon",
   },
   {
     prop: "maxTime",

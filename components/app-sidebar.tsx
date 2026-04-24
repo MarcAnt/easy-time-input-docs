@@ -29,6 +29,11 @@ const data = {
           title: "Introduction",
           url: "#docs",
         },
+        {
+          title: "Changelog",
+          url: "#changelog",
+          isActive: true,
+        },
       ],
     },
     {
@@ -59,6 +64,10 @@ const data = {
         {
           title: "disabledSeconds",
           url: "#prop-disabledSeconds",
+        },
+        {
+          title: "disableFocusOnIcon",
+          url: "#prop-disableFocusOnIcon",
         },
         {
           title: "required",
@@ -171,6 +180,10 @@ const data = {
         {
           title: "hideControls",
           url: "#prop-hideControls",
+        },
+        {
+          title: "hideIcon",
+          url: "#prop-hideIcon",
         },
         {
           title: "hour12",
